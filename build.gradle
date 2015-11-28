@@ -1,4 +1,4 @@
-apply plugin 'java'
+apply plugin: 'java'
 
 sourceSets{
 	main{
@@ -12,5 +12,14 @@ sourceSets{
 			srcDir 'test'
 		}
 	}
+
+}
+
+repositories{
+	mavenCentral()	
+}
+
+dependencies{
+	compile 'junit:junit:4.12'
 
 }
